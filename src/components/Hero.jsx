@@ -17,7 +17,7 @@ const Hero = () => {
                 </div>
                 <div className="hero-image-container" style={{ flex: 1, display: 'flex', justifycontent: 'center' }}>
                     <img
-                        src="/mi-foto.png.png"
+                        src="/mi-foto.png"
                         alt="Foto de Leandro"
                         className="hero-profile-img"
                         style={{ width: '280px', height: '280px', objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--accent-color)', boxShadow: '0 0 20px rgba(56, 189, 248, 0.2)' }}
