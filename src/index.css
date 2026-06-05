@@ -1,0 +1,67 @@
+/* Variables de diseño Cyberpunk / Tech */
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-color: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent-color: #38bdf8;
+  --accent-hover: #0ea5e9;
+}
+
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Títulos con barra neón abajo */
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: var(--accent-color);
+  bottom: -10px;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* Contenedores de Tarjetas (Reutilizables) */
+.skill-category {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Ajustes Responsivos Básicos */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 1.5rem 0;
+  }
+}
